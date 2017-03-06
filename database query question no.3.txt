@@ -1,0 +1,6 @@
+SELECT * FROM department d;
+SELECT * FROM employee e;
+select dname,count(empno) from employee 
+join department on 
+employee.deptno-department.deptno 
+group by department.deptno,dname;
